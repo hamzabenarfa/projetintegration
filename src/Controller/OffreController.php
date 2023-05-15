@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/offre')]
-class sOffreController extends AbstractController
+class OffreController extends AbstractController
 {
     #[Route('/', name: 'app_offre_index', methods: ['GET'])]
     public function index(OffreRepository $offreRepository): Response
