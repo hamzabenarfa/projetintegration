@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page d'accueil - Réservation de voyages</title>
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>LUXURYAVOYAGE</h1>
+       <form action="{{ path('search') }}" method="GET"> 
+      <input type="text" name="name" placeholder="Rechercher par nom">
+      <input type="number" name="price" placeholder="Rechercher par prix">
+      <button type="submit">Rechercher</button>
+    </form>
+  </header>
+ <section>
+  {% for voyage in voyages %}
+    <div class="box">
+      <img src="{{ asset('images/' ~ voyage.image) }}" alt="{{ voyage.nom }}">
+      <div class="content">
+        <h2>{{ voyage.nom }}</h2>
+        <p>{{ voyage.description }}</p>
+        <p>Prix : {{ voyage.prix }}</p>
+        <button>Réserver</button>
+      </div>
+    </div>
+  {% endfor %}
+
+</section>
+
+  
+  <footer>
+    <!-- Contenu du footer -->
+  </footer>
+</body>
+</html>
