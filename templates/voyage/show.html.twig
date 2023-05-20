@@ -1,3 +1,4 @@
+{% extends 'base.html.twig' %}
 
 {% block title %}Voyage{% endblock %}
 
@@ -11,12 +12,24 @@
                 <td>{{ voyage.id }}</td>
             </tr>
             <tr>
-                <th>Destination</th>
-                <td>{{ voyage.destination }}</td>
-            </tr>
-            <tr>
                 <th>Prix</th>
                 <td>{{ voyage.prix }}</td>
+            </tr>
+            <tr>
+                <th>Img_src</th>
+                <td>{{ voyage.imgSrc }}</td>
+            </tr>
+            <tr>
+                <th>Dest_title</th>
+                <td>{{ voyage.destTitle }}</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>{{ voyage.location }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ voyage.description }}</td>
             </tr>
         </tbody>
     </table>

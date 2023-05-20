@@ -1,0 +1,13 @@
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    font-weight: bold;
+}
+
+.form-row input[type="text"] {
+    width: 200px;
+}
+
+/* Add more CSS rules as needed */

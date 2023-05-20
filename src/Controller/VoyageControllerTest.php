@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/voyage')]
-class VoyageController extends AbstractController
+class VoyageControllerTest extends AbstractController
 {
     #[Route('/', name: 'app_voyage_index', methods: ['GET'])]
     public function index(VoyageRepository $voyageRepository): Response
